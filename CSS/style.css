@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+* h1, * h2, * h3, * p {
+  margin-bottom: 0.8m;
+}
+
+.flex-container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-container-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main, section {
+  height: 75vh;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+#Destaque {
+  background: url();
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.botao {
+  background-color: #000000;
+}
+
+.destaqueHTML {
+  color: #E44D26;
+}
+
+.destaqueCSS {
+  color: #264DE4;
+}
+
+.destaqueJS {
+  color: #E5A228;
+}
+/*# sourceMappingURL=style.css.map */
