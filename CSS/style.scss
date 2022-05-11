@@ -58,42 +58,123 @@ $colorsLikert: (
     flex-wrap: wrap;
     flex-direction: column;
 }
+.menu {
+    justify-content: space-around;
+    background-color: $backgroundSecondaryColor;
+    height: 100px;
+    color: $fontSecondaryColor;
+    align-items: flex-start;
+    a {
+        color: $fontSecondaryColor;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+    }
+}
 main, section{
     height: 75vh;
     text-align: center;
     overflow: hidden;
     border: 1px solid black;
 }
+.listaDeLinks{
+    
+    width: 30vw;
+    ul {
+        list-style-type: none;
+        align-items: flex-start;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: $fontDefaultColor;
+    }
+}
+.alinharTop{
+    align-items: flex-start;
+}
+
+.section-details {
+    width: 70vw;
+    padding: 4vw;
+}
+
 #Destaque{
-    background: url();
+    background-image: url(../img/Destaque_o20.png);
     background-position: center;
     background-repeat: no-repeat;
-
 }
 .botao{
     background-color: $backgroundSecondaryColor;
-    color: ;
+    color:$fontSecondaryColor;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
     width: 200px;
     font-weight: 900;
 }
-.destaqueHTML{
+#DestaqueHTML{
     color: $primaryHtmlColor;
 
 }
-.destaqueCSS{
+#DestaqueCSS{
     color: $primaryCssColor;
 
 }
-.destaqueJS{
+#DestaqueJS{
     color: $primaryJsColor;
 
 }
+#HTML{
+    background: $gradienteHTML;
 
+}
+#CSS{
+    background: $gradienteCSS;
 
+}
+#JavaScript{
+    background: $gradienteJS;
 
+}
+#LinksUteis {
+    background: $gradienteLinks;
+}
+#LinksUteis h2{
+    margin-bottom: 50px;
+}
+.footer{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.footer li{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
 
 
 //Smartphones em modo retrato

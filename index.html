@@ -17,85 +17,175 @@
         <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
     </head>
     <body>
-
-        <header class="flex-container-row">
-            <nav class="flex-container-row">
-                <img src="img/favicon.png">
-                <ul class="flex-container-row">
-                    <li><a href="">HTML</a></li>
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">JavaScript</a></li>
-                    <li>Links</li>
-                </ul>
-            </nav>
-
+        <!--Cabeçalho -logo e menu-->
+        <header class="flex-container-row menu">
+            <img src="img/favicon.png" alt="Logo do site" id="logo">
+            <ul class="flex-container-row itemMenu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Links Úteis</a></li>
+            </ul>
         </header>
-
-        <main>
-            <h1>Aprenda <mark id=""> HTML5 </mark>, <mark id="">CSS</mark> e <mark id="">JAVASCRIPT</mark></h1>
-            <h2>Escrever com semântica!</h2>
-            <h3>Aplicar estilos modernos!</h3>
-            <h4>Obter uma melhor interação!</h4>
-            <section>
-                <img src="img/HTML5.png" alt="Logo HTML5">
-                <h2>HTML5</h2>
-                <h3>A HTML é a linguagem principal da web</h3>
-                <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.</p>
-                <a href="#">Saiba Mais</a>
-                
-            </section>
-            <section>
-                <img src="img/CSS3.png" alt="Logo CSS3">
-                <h2>CSS3</h2>
-                <h3>O CSS complementa o HTML</h3>
-                <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</p>
-                <a>Saiba Mais</a>
-            </section>
-            <section>
-                <img src="img/JS.png" alt="Logo JAVASCRIPT">
-                <h2>JAVASCRIPT</h2>
-                <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web.</h3>
-                <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
-                <a>Saiba Mais</a>
-            </section>HTML
-            <section>
-                <h2>LINKS UTEIS</h2>
-                <h3>Planejamento</h3>
-                <ul>
-                    <li><a  href = "https://www.figma.com/">Figma</a></li>
-                    <li><a  href = "https://fonts.google.com/">Google Fonts</a></li>
-                    <li><a  href = "https://home.unicode.org/">Unicode.org</a></li>
-                    <li><a  href = "https://realfavicongenerator.net/">Favicon Generator </a></li>
-                    <li><a  href = "https://getbootstrap.com/">Bootstrap</a></li>
-                </ul>
-                <h3>Programação</h3>
-                <ul>
-                    <li><a href="https://git-scm.com/)">Git</a></li>
-                    <li><a href="https://github.com/">Github</a></li>
-                    <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-                    <li><a href="https://nodejs.org/en/">Node.js</a></li>
-                </ul>
-                <h3>Ajuda</h3>
-                <ul>
-                    <li><a hrefSS="https://www.w3.org/">W3C</a></li>
-                    <li><a href="https://validator.w3.org/">Validador HTML</a></li>
-                    <li><a href="ttps://jigsaw.w3.org/css-validator/">Validador CSS</a></li>
-                    <li><a href="https://www.w3c.br/">W3C Brasil</a></li>
-                    <li><a href="https://www.w3schools.com/">W3schools</a></li>
-                </ul>
-            </section>
+        <!--Seção principal - destaque -->
+        <main id="Destaque" class="flex-container-column">
+            <h1>Aprenda <em id = "DestaqueHTML">HTML5</em>, <em id= "DestaqueCSS">CSS3</em> e <em id = "DestaqueJS">JavaScript</em></h1>
+            <h2>Escrever com <em id = "DestaqueHTML">semântica</em>!</h2>
+            <h2>Aplicar <em id = "DestaqueCSS">estilos</em> modernos!</h2>
+            <h2>Obter uma melhor <em id = "DestaqueJS">interação</em>!</h2>
         </main>
+        <!--Seção html5 -->
+        <section id="HTML" class="flex-container-column">
+            <div class="flex-container-row">
+                <img src="img/HTML5.png" alt="Logo do HTML5">
+                <div class="flex-container-column section-details">
+                    <h2>HTML5</h2>
+                    <h3>A HTML é a linguagem principal da web</h3>
+                    <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página.
+                        Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação
+                        de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos
+                        e que facilita a reutilização da informação de diversas formas.</p>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="botao">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+        <!-- Seção css3 -->
+        <section id="CSS" class="flex-container-column">
+            <div class="flex-container-row" id="InverterFlexBox">
+                <img src="img/CSS3.png" alt="Logo do CSS3">
+                <div class="flex-container-column section-details">
+                    <h2>CSS3</h2>
+                    <h3>O CSS complementa o HTML</h3>
+                    <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada
+                    para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas
+                    e permitir uma apresentação mais amigável para o usuário.</p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="botao">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+        <!-- Seção JavaScript -->
+        <section id="JavaScript" class="flex-container-column">
+            <div class="flex-container-row ">
+                <img src="img/JS.png" alt="Logo do JavaScript">
+                <div class="flex-container-column section-details">
+                    <h2>JavaScript</h2>
+                    <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+                    <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando
+                    estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="botao">Saiba mais</a>
+                </div>
+            </div>
+        </section>
 
-        <footer>
+        <!-- Seção Links úteis -->
+        <section id="LinksUteis" class = "flex-container-column">
+            <h2>Links Úteis</h2>
+            <div class = "flex-container-row alinharTop">
+                <div class="listaDeLinks">
+                    <h3>Planejamento</h3>
+                    <ul class = "flex-container-column">
+                        <li class = "flex-container-row">
+                            <img src="img/Figma_icon.png" alt="Logo do Figma">
+                            <a href="https://www.figma.com/" target="_blank" rel="nofollow">Figma</a>
+                        </li>
 
-            © 2022 - Deise Cristiane Silva
+                        <li class = "flex-container-row">
+                            <img src="img/Google_icon.png" alt="Logo do Google Fonts">
+                            <a href="https://fonts.google.com/" target="_blank" rel="nofollow">Google Fonts</a>
+                        </li>
 
-            (81)99156-7056
-            jobsontenorio@gmail.com
-            https://www.youtube.com/channel/UCe4_fd7PQj2lWTdKxFZ8kbQ
-            https://www.facebook.com/jobson.tenorio.7/
-            https://www.instagram.com/jobsontenorio/ 
+                        <li class = "flex-container-row">
+                            <img src="img/Unicode_icon.png" alt="Logo do unicode.org">
+                            <a href="https://home.unicode.org/" target="_blank" rel="nofollow">unicode.org</a>
+                        </li>
 
+                        <li class = "flex-container-row">
+                            <img src="img/Realfavicongenerator_icon.png" alt="Logo do Real Favicon Generator">
+                            <a href="https://realfavicongenerator.net/" target="_blank" rel="nofollow">Favicon Generator</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/Bootstrap_icon.png" alt="Logo do Bootstrap">
+                            <a href="https://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="listaDeLinks">
+                    <h3>Programação</h3>
+                    <ul class = "flex-container-column">
+                        <li>
+                            <img src="img/Git_icon.png" alt="Logo do Git">
+                            <a href="https://git-scm.com/" target="_blank" rel="nofollow">Git</a>
+                        </li>
+                        <li>
+                            <img src="img/Github_icon.png" alt="Logo do Github">
+                            <a href="https://github.com/" target="_blank" rel="nofollow">Github</a>
+                        </li>
+                        <li>
+                            <img src="img/Visual_Studio_Code_icon.png" alt="Logo do Visual Studio Code">
+                            <a href="https://code.visualstudio.com/" target="_blank" rel="nofollow">VS Code</a>
+                        </li>
+                        <li>
+                            <img src="img/Node.js_icon.png" alt="Logo do Node.js">
+                            <a href="https://nodejs.org/en/" target="_blank" rel="nofollow">Node.js</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="listaDeLinks">
+                    <h3>Ajuda</h3>
+                    <ul class = "flex-container-column">
+                        <li >
+                            <img src="img/W3C_Brasil_icon.png" alt="Logo do W3C">
+                            <a href="https://www.w3.org/" target="_blank" rel="nofollow">W3C</a>
+                        </li>
+                        <li>
+                            <img src="img/W3C_icon.png" alt="Logo do W3C">
+                            <a href="https://validator.w3.org/" target="_blank" rel="nofollow">Validador HTML</a>
+                        </li>
+                        <li>
+                            <img src="img/W3C_icon.png" alt="Logo do W3C">
+                            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="nofollow">Validador CSS</a>
+                        </li>
+                        <li>
+                            <img src="img/W3C_Brasil_icon.png" alt="Logo do W3C">
+                            <a href="https://www.w3c.br/" target="_blank" rel="nofollow">W3C Brasil</a>
+                        </li>
+                        <li>
+                            <img src="img/W3Schools_icon.png" alt="Logo do W3schools">
+                            <a href="https://www.w3schools.com/" target="_blank" rel="nofollow">W3schools</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="flex-container-row footer">
+            <p>© 2022 - Deise Cristiane Silva </p>
+            <ul class="flex-container-row">
+                <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/WhatsApp_icon.png" alt="Logo do WhatsApp"></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/Gmail_icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/YouTube_icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/Facebook_icon.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/Instagram_icon.png" alt=""></a>
+                </li>
+            </ul>
+        
         </footer>
         
 

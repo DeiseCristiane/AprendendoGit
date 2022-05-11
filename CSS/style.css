@@ -46,6 +46,30 @@
           flex-direction: column;
 }
 
+.menu {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #000000;
+  height: 100px;
+  color: #FFFFFF;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px;
+}
+
 main, section {
   height: 75vh;
   text-align: center;
@@ -53,25 +77,134 @@ main, section {
   border: 1px solid black;
 }
 
+.listaDeLinks {
+  width: 30vw;
+}
+
+.listaDeLinks ul {
+  list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.listaDeLinks img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.listaDeLinks a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.alinharTop {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-details {
+  width: 70vw;
+  padding: 4vw;
+}
+
 #Destaque {
-  background: url();
+  background-image: url(../img/Destaque_o20.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .botao {
   background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 900;
 }
 
-.destaqueHTML {
+#DestaqueHTML {
   color: #E44D26;
 }
 
-.destaqueCSS {
+#DestaqueCSS {
   color: #264DE4;
 }
 
-.destaqueJS {
+#DestaqueJS {
   color: #E5A228;
+}
+
+#HTML {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
+  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+}
+
+#CSS {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(38, 77, 228, 0.8)), to(rgba(41, 101, 241, 0.8)));
+  background: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+}
+
+#JavaScript {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(229, 162, 40, 0.8)), to(rgba(241, 191, 38, 0.8)));
+  background: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
+}
+
+#LinksUteis {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+#LinksUteis h2 {
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding: 50px;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
